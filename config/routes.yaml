@@ -1,0 +1,10 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+hoang_test:
+    path: /hoangtest
+    controller: App\Controller\HoangTestController::index
+
+admin:
+    path: /admin
+    controller: App\Controller\AdminController::index
