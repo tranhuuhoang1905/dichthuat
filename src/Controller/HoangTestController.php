@@ -29,16 +29,7 @@ class HoangTestController extends AbstractController
             }
         }
         $isAdmin = 0;
-        // var_dump($userAuth->getId());
-        // var_dump($rolses);die;
-        // --------------
-//        if($rolses){
-//
-//            $showUser = $userRepository->getUser($userAuth->getId());
-//            var_dump($showUser);
-//        }
-        $test = $postRepository->getAllPost();
-        var_dump($test);
+        
         if ($isAdmin) {
              return $this->redirectToRoute('admin');
         }
