@@ -2,3 +2,5 @@
 
 # dependencies
 /vendor
+.env
+/var
