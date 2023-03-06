@@ -22,8 +22,9 @@ class ApiController extends AbstractController
     #[Route('/login', name: 'app_api_login', methods: ['POST'])]
     public function login(Request $request ): Response
     {
-        $userName = $request->query->get('username');
-        $password = $request->query->get('password');
+        // dump($request);die;
+        $userName = $request->request->get('username');
+        $password = $request->request->get('password');
 
         $dataRes = [
             "token"=>"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
